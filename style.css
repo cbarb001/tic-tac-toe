@@ -1,0 +1,76 @@
+body{background-color: black;}
+
+.wrapper{
+    border: 1px solid yellow;
+    }
+
+.theBox {
+	width: 468px;
+	height: 468px;
+    border-style: solid;
+    border-color: black;
+    background-color:black;
+    margin: 0 auto;
+}
+
+.allCellsAlways {
+    width: 150px;
+	height: 150px;
+	display: inline-block;
+    float: left;
+    margin: 0px ;
+    padding: 0px ;
+    border-style: solid;
+    border-color: blue;
+
+}
+
+.allCellsAlways:hover{
+    background-color: rgb(40,40,40);
+}
+
+
+.xclass {
+	background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Pac-Man.svg/200px-Pac-Man.svg.png');
+    background-size: 150px 150px;
+}
+
+.oclass {
+	background-image:url('http://egrizzly305.files.wordpress.com/2012/07/pacman-ghost.jpg');
+    background-size: 150px 150px;
+}
+
+.blankclass {
+	background-color: gray ;
+}
+
+h1{
+    color: yellow;
+    text-align: center;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.winner{
+    color: yellow;
+    text-align: center;
+    font-size: 50px;
+}
+
+.winnerCount{
+    text-align: center;
+    float: right;
+    padding-right: 125px;
+    padding-top: 180px;
+    color: yellow;
+    font-size: 30px;
+}
+
+.newGame{
+    text-align: center;
+    color: white;
+    float: left;
+    padding-left: 125px;
+    padding-top: 200px;
+    font-size: 30px;
+}
