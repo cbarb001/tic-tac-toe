@@ -1,0 +1,52 @@
+  //if X wins
+
+  if((thisCell.status == "X" && thisCell.pos == 0) && (thisCell.status == "X" && thisCell.pos == 1) && (thisCell.status == "X" && thisCell.pos == 2))
+   	$scope.gameContainer.p1Wins = true;
+  if((thisCell.status == "X" && thisCell.pos == 3) && (thisCell.status == "X" && thisCell.pos == 4) && (thisCell.status == "X" && thisCell.pos == 5))
+    $scope.gameContainer.p1Wins = true;
+  if((thisCell.status == "X" && thisCell.pos == 6) && (thisCell.status == "X" && thisCell.pos == 7) && (thisCell.status == "X" && thisCell.pos == 8))
+    $scope.gameContainer.p1Wins = true;
+  if((thisCell.status == "X" && thisCell.pos == 0) && (thisCell.status == "X" && thisCell.pos == 4) && (thisCell.status == "X" && thisCell.pos == 8))
+    $scope.gameContainer.p1Wins = true;
+  if((thisCell.status == "X" && thisCell.pos == 2) && (thisCell.status == "X" && thisCell.pos == 4) && (thisCell.status == "X" && thisCell.pos == 6))
+    $scope.gameContainer.p1Wins = true;
+
+  //if Y wins
+ 
+  if((thisCell.status == "O" && thisCell.pos == 0) && (thisCell.status == "O" && thisCell.pos == 1) && (thisCell.status == "O" && thisCell.pos == 2))
+    $scope.gameContainer.p2Wins = true;
+  if((thisCell.status == "O" && thisCell.pos == 3) && (thisCell.status == "O" && thisCell.pos == 4) && (thisCell.status == "O" && thisCell.pos == 5))
+    $scope.gameContainer.p2Wins = true;
+  if((thisCell.status == "O" && thisCell.pos == 6) && (thisCell.status == "O" && thisCell.pos == 7) && (thisCell.status == "O" && thisCell.pos == 8))
+    $scope.gameContainer.p2Wins = true;
+  if((thisCell.status == "O" && thisCell.pos == 0) && (thisCell.status == "O" && thisCell.pos == 4) && (thisCell.status == "O" && thisCell.pos == 8))
+    $scope.gameContainer.p2Wins = true;
+  if((thisCell.status == "O" && thisCell.pos == 2) && (thisCell.status == "O" && thisCell.pos == 4) && (thisCell.status == "O" && thisCell.pos == 6))
+    $scope.gameContainer.p2Wins = true;
+
+
+
+    // if X wins
+
+    if(($scope.cellList[0].pos == "0" && $scope.cellList[0].status == "X") && ($scope.cellList[1].pos == "1" && $scope.cellList[1].status == "X") && ($scope.cellList[2].pos == "2" && $scope.cellList[2].status == "X"))
+      $scope.gameContainer.p1Wins = true;
+ 
+    if(($scope.cellList[3].pos == "3" && $scope.cellList[3].status == "X") && ($scope.cellList[4].pos == "4" && $scope.cellList[4].status == "X") && ($scope.cellList[5].pos == "5" && $scope.cellList[5].status == "X"))
+      $scope.gameContainer.p1Wins = true;
+    if(($scope.cellList[6].pos == "6" && $scope.cellList[6].status == "X") && ($scope.cellList[7].pos == "7" && $scope.cellList[7].status == "X") && ($scope.cellList[8].pos == "8" && $scope.cellList[8].status == "X"))
+      $scope.gameContainer.p1Wins = true;
+    if(($scope.cellList[0].pos == "0" && $scope.cellList[0].status == "X") && ($scope.cellList[4].pos == "4" && $scope.cellList[4].status == "X") && ($scope.cellList[8].pos == "8" && $scope.cellList[8].status == "X"))
+      $scope.gameContainer.p1Wins = true; 
+    if(($scope.cellList[2].pos == "2" && $scope.cellList[2].status == "X") && ($scope.cellList[4].pos == "4" && $scope.cellList[4].status == "X") && ($scope.cellList[6].pos == "6" && $scope.cellList[6].status == "X"))
+      $scope.gameContainer.p1Wins = true; 
+//if Y wins
+    if(($scope.cellList[0].pos == "0" && $scope.cellList[0].status == "O") && ($scope.cellList[1].pos == "1" && $scope.cellList[1].status == "O") && ($scope.cellList[2].pos == "2" && $scope.cellList[2].status == "O"))
+      $scope.gameContainer.p2Wins = true;
+    if(($scope.cellList[3].pos == "3" && $scope.cellList[3].status == "O") && ($scope.cellList[4].pos == "4" && $scope.cellList[4].status == "O") && ($scope.cellList[5].pos == "5" && $scope.cellList[5].status == "O"))
+      $scope.gameContainer.p2Wins = true;
+    if(($scope.cellList[6].pos == "6" && $scope.cellList[6].status == "O") && ($scope.cellList[7].pos == "7" && $scope.cellList[7].status == "O") && ($scope.cellList[8].pos == "8" && $scope.cellList[8].status == "O"))
+      $scope.gameContainer.p2Wins = true;
+    if(($scope.cellList[0].pos == "0" && $scope.cellList[0].status == "O") && ($scope.cellList[4].pos == "4" && $scope.cellList[4].status == "O") && ($scope.cellList[8].pos == "8" && $scope.cellList[8].status == "O"))
+      $scope.gameContainer.p2Wins = true; 
+    if(($scope.cellList[2].pos == "2" && $scope.cellList[2].status == "O") && ($scope.cellList[4].pos == "4" && $scope.cellList[4].status == "O") && ($scope.cellList[6].pos == "6" && $scope.cellList[6].status == "O"))
+      $scope.gameContainer.p2Wins = true; 
