@@ -21,7 +21,6 @@ TTTApp.controller("TTTController", function ($scope, $firebase) {
       {status: "B"}, {status: "B"}, {status: "B"}
   ];
 
-
  // This container object is what gets synced:
   $scope.gameContainer = {
     cellListArray: $scope.cellList,
@@ -39,7 +38,6 @@ TTTApp.controller("TTTController", function ($scope, $firebase) {
    
   $scope.remoteGameContainer.$bind($scope, "gameContainer") ;
 
- 
   $scope.$watch('gameContainer', function() {
     console.log('gameCountainer changed!') ;
   }) ;
